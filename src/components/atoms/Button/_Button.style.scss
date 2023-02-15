@@ -1,0 +1,52 @@
+.Button {
+  margin: 20px;
+  align-items: center;
+  width: 120px;
+  background-color: var(--bg-button-blue); //#5B42F3;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 14px 18px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--background-transition);
+
+  &:active,
+  &:hover {
+    outline: 0;
+    background-color: var(--bg-button-blue-dark-30);
+    box-shadow: none;
+  }
+
+  // XS - Phone
+  @media (max-width: 480px) {
+  }
+
+  // S - Tablet
+  @media (max-width: 768px) {
+  }
+
+  // M - Tablet/Laptop
+  @media (max-width: 1024px) {
+  }
+
+  // L - High Res
+  @media (max-width: 1200px) {
+  }
+
+  // XL - Ultra High Res
+  @media (min-width: 1201px) {
+  }
+}

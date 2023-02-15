@@ -1,0 +1,26 @@
+.Paragraph {
+  padding: 2%;
+  font-size: 1rem;
+  line-height: 2rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+
+  // XS - Phone
+  @media (max-width: 480px) {
+  }
+
+  // S - Tablet
+  @media (max-width: 768px) {
+  }
+
+  // M - Tablet/Laptop
+  @media (max-width: 1024px) {
+  }
+
+  // L - High Res
+  @media (max-width: 1200px) {
+  }
+
+  // XL - Ultra High Res
+  @media (min-width: 1201px) {
+  }
+}

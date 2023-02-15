@@ -1,0 +1,28 @@
+
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import Logo from './assets/educom-ai.png'
+
+<Meta title="Colors" />
+
+<img src={ Logo } style={{ height: 60, marginBottom: 40 }}/>
+
+<h2>Base / Highlight</h2>
+
+<ColorPalette>
+    <ColorItem
+        title="Black"
+        colors={{ black: "#161616", "highlight black": "#212121" }}
+    />
+    <ColorItem
+        title="White"
+        colors={{ white: "#FFF", "white muted": "rgba(255,255,255,0.6)" }}
+    />
+    <ColorItem
+        title="Button Blue"
+        colors={{ "button-blue": "#5B42F3",
+                  "button-blue-light-30": "#d8d2fc",
+                  "button-blue-dark-30": "#1d0993",
+                  }}
+    />
+</ColorPalette>
+

@@ -1,0 +1,30 @@
+.Error {
+  margin: 0 20%;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+
+  // XS - Phone
+  @media (max-width: 480px) {
+  }
+
+  // S - Tablet
+  @media (max-width: 768px) {
+  }
+
+  // M - Tablet/Laptop
+  @media (max-width: 1024px) {
+  }
+
+  // L - High Res
+  @media (max-width: 1200px) {
+  }
+
+  // XL - Ultra High Res
+  @media (min-width: 1201px) {
+  }
+}

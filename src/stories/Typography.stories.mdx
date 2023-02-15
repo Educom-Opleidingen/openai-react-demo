@@ -1,0 +1,102 @@
+
+import { Meta, Typeset } from '@storybook/addon-docs';
+
+<Meta title="Typography" />
+
+<style>
+    {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #E7FDD8;
+      color: #66BF3C;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .tip-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .tip-wrapper code {
+      font-size: 12px;
+      display: inline-block;
+    }
+`}
+</style>
+
+export const fontName = "Helvetica Neue"
+export const fontNameText = "San Francisco Display"
+
+export const typography = {
+    type: {
+        heading:`heading`,
+        paragraph:`main-text-bold`,
+        paragraph_bold: `main-text-bold`,
+        bold: `main-text-bold`,
+        link: `main-text-link`
+    },
+    weight: [
+        { type: "regular", weight: '400' },
+        { type: "bold", weight: '700'},
+    ]
+};
+
+export const SampleText = 'Een alternatief voor ChatGPT & Dall-E';
+
+<h4>Font: { `${fontName}` }</h4>
+
+<div className="tip-wrapper">
+    <span className="tip">FIX</span>
+    Non-repsonsive sizes. (<code>VW</code> or <code>VH</code> units, or media-queries)
+</div>
+
+
+<div className="subheading">Heading</div>
+<Typeset
+    fontSizes={[32, 24, 22]}
+    fontWeight={typography.weight.bold}
+    sampleText={SampleText}
+    fontFamily={typography.type.heading}
+/>
+
+<h4>Font: { `${fontNameText}` }</h4>
+
+<div className="tip-wrapper">
+    <span className="tip">FIX</span>
+    Non-repsonsive sizes. (<code>VW</code> or <code>VH</code> units, or media-queries)
+</div>
+
+<div className="subheading">Paragraph</div>
+<Typeset
+    fontSizes={[14,16, 20, 22]}
+    fontWeight={typography.weight.regular}
+    sampleText={SampleText}
+    fontFamily={typography.type.regular}
+/>
+
+<div className="subheading">Links & Tags</div>
+<Typeset
+    fontSizes={[14,16, 20, 22]}
+    sampleText={SampleText}
+    fontFamily={typography.type.link}
+/>
