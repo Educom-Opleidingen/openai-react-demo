@@ -70,8 +70,8 @@ const Form = ({ testID }) => {
         <Input handler={inputHandler} />
       </div>
       {renderButtonBar()}
-      {hasResult && type === config.types.image && <Image image={result} />}
-      {hasResult && type === config.types.text && <Paragraph text={result} />}
+      {(hasResult && type === config.types.image) && <Image image={result} />}
+      {(hasResult && type === config.types.text) && <Paragraph text={result} />}
       {isError && <Error error={error} />}
     </div>
   )
