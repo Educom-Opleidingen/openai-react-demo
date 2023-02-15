@@ -31,6 +31,7 @@ const Form = ({ testID }) => {
     setType(type)
     const [result, error] = await generateResult(type, prompt)
 
+    /// TODO: Dit mag wat strakker. Even nadenken of een reducer hier op z'n plek is...
     if (error) {
       setError(error)
       setHasError(true)
@@ -59,9 +60,8 @@ const Form = ({ testID }) => {
           />
         </div>
       )
-    } else {
-      return <Spinner />
     }
+    return <Spinner />
   }
 
   return (
